@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#2e1e35"
+    tools:context=".MainActivity" android:orientation="vertical">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="-35dp"
+        android:background="@drawable/backed"
+        android:contentDescription="TODO" 
+        tools:ignore="ContentDescription,RtlHardcoded"/>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Music Title"
+        android:textSize="32sp"
+        android:textColor="#FFF"
+    />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginVertical="10dp"
+        android:src="@drawable/music"
+        android:foreground="@drawable/rounded_fg"
+        android:contentDescription="TODO"/>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:progress="100"
+        android:theme="@style/SeekBarColor"
+    />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+        
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:background="@drawable/btn_bg"
+        />
+
+        <ImageButton
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/play"
+            android:background="@drawable/ps_bn"
+        />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/next"
+            android:background="@drawable/btn_bg"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/down"
+            android:background="#2e1e35"
+            android:layout_marginTop="35dp"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
